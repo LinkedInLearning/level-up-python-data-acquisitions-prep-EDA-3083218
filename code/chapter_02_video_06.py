@@ -4,7 +4,7 @@ import pandas as pd
 import seaborn as sns
 from sklearn.decomposition import PCA
 
-employees = pd.read_csv('level_up_data.csv')
+employees = pd.read_csv('data/level_up_data.csv')
 
 data_types = employees.dtypes
 
@@ -12,7 +12,7 @@ numeric_predictors = employees.columns[(data_types == 'float64') | (data_types =
 
 numeric_employees = employees[numeric_columns]
 
-numeric_employees = numeric_employees.drop('days_to_separate', axis = 1)
+numeric_employees = numeric_employees.drop(['days_to_separate', 'separated_ny'], axis = 1)
 
 pca = PCA(n_components = 5)
 
