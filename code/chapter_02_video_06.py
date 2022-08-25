@@ -10,7 +10,7 @@ data_types = employees.dtypes
 
 numeric_predictors = employees.columns[(data_types == 'float64') | (data_types == 'int64')]
 
-numeric_employees = employees[numeric_columns]
+numeric_employees = employees[numeric_predictors]
 
 numeric_employees = numeric_employees.drop(['days_to_separate', 'separated_ny'], axis = 1)
 
