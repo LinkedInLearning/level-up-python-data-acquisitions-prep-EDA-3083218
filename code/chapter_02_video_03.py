@@ -6,6 +6,8 @@ data_types = employees.dtypes
 
 numeric_columns = employees.columns[(data_types == 'float64') | (data_types == 'int64')]
 
+numeric_columns = numeric_columns[numeric_columns != "separated_ny"]
+
 numeric_employees = employees[numeric_columns]
 
 numeric_employees.dtypes 
