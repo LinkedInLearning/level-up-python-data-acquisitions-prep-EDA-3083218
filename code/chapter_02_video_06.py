@@ -14,7 +14,7 @@ numeric_employees = employees[numeric_columns]
 
 numeric_employees = numeric_employees.drop(['days_to_separate', 'separated_ny'], axis = 1)
 
-pca = PCA(n_components = 5)
+pca = PCA(n_components = 4)
 
 pca.fit(numeric_employees)
 
