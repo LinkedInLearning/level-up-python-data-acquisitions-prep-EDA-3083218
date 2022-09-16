@@ -11,10 +11,6 @@ numeric_columns = employees.columns[(data_types == 'float64') | (data_types == '
 
 numeric_employees = employees[numeric_columns]
 
-sns.scatterplot(data=numeric_employees, x="starting_salary", y="prior_job_count")
-
-plt.savefig('chapter_03_video_04_add_to_viz.svg', transparent=True, bbox_inches = "tight")
-
 numeric_employees = numeric_employees.drop('separated_ny', axis = 1)
 
 employee_correlations = numeric_employees.corr()
