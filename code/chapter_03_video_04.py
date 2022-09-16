@@ -5,8 +5,6 @@ import seaborn as sns
 
 employees = pd.read_csv('data/level_up_data.csv')
 
-employees.select_dtypes
-
 def z_score_maker(variable):
   variable_mean = variable.mean()
   variable_sd = variable.std()
@@ -29,3 +27,6 @@ g = sns.catplot(x="value", y="variable",
                 kind="violin", dodge=True, cut=0, bw=.2, sharex=False)
 
 plt.show()
+
+plt.savefig('chapter_03_video_04_end_viz.svg', 
+           transparent=True)
