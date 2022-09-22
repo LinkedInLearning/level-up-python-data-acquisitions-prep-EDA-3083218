@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-employees = pd.read_csv('data/level_up_data.csv')
+employees = pd.read_csv('level_up_data.csv')
 
 data_types = employees.dtypes
 
