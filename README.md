@@ -1,5 +1,5 @@
 # Level Up: Python Data Acquisitions, Prep, & EDA 
-This is the repository for the LinkedIn Learning course Level Up: Python Data Acquisitions, Prep, & EDA . The full course is available from [LinkedIn Learning][lil-course-url].
+This is the repository for the LinkedIn Learning course Level Up: Python Data Acquisitions, Prep, & EDA. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![Level Up: Python Data Acquisitions, Prep, & EDA ][lil-thumbnail-url]
 
