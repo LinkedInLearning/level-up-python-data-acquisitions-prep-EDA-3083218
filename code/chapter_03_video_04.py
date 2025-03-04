@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-employees = pd.read_csv('level_up_data.csv')
+employees = pd.read_csv('./data/level_up_data.csv')
 
 def z_score_maker(variable):
   variable_mean = variable.mean()
@@ -24,7 +24,7 @@ g = sns.catplot(x="value", y="variable",
                 hue="department", 
                 data=employees_melted,
                 orient="h", height=2, aspect=3, palette="Set3",
-                kind="violin", dodge=True, cut=0, bw=.2, sharex=False)
+                kind="violin", dodge=True, cut=0, bw_method=.2, sharex=False)
 
 plt.show()
 
